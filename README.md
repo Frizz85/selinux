@@ -242,7 +242,7 @@ sudo chcon -R -t named_zone_t /etc/named
 ```
 
 Попробуем снова внести изменения с клиента: 
-[vagrant@client ~]$ nsupdate -k /etc/named.zonetransfer.key
+nsupdate -k /etc/named.zonetransfer.key
 > server 192.168.50.10
 > zone ddns.lab
 > update add www.ddns.lab. 60 A 192.168.50.15
